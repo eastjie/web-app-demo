@@ -2,13 +2,8 @@
 testMyJenkinsStages()
 
      post {
-          changed {
-                    sendEmailNotification buildChanged: true, state: "Changed"
-                }
                 failure {
-                    sendEmailNotification buildChanged: false, state: "Failed"
+                    sendEmailNotification  "FAILED"
                 }
-                unstable {
-                    sendEmailNotification buildChanged: false, state: "Unstable"
-                }
+                 
      }
