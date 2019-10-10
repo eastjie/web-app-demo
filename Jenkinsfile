@@ -1,2 +1,9 @@
 @Library("my-jenkins-library")_
-testMyJenkinsStages()
+stage("Begin"){
+    echo "Begin Build"
+}
+
+stage("Send Email in build"){
+    testMyJenkinsStages()
+}
+
