@@ -1,26 +1,9 @@
-// @Library("my-jenkins-library")_
+@Library("my-jenkins-library")_
 
-// stage("Test post script"){
-//     echo "Test post script"
-// }
-
-//      post {
-//                 failure {
-//                     sendEmailNotification  "FAILED"
-//                 }
-                 
-//      }
+stage("Test"){
+   testMyJenkinsStages()
+}
 
  
-    stages {
-        stage('Example') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-    }
-    post { 
-        always { 
-            echo 'I will always say Hello again!'
-        }
-    }
+  
+ 
