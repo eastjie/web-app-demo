@@ -1,8 +1,6 @@
 @Library("my-jenkins-library")_
+testMyJenkinsStages()
 
-stage("Test"){
-   testMyJenkinsStages()
-}
 
  
   
